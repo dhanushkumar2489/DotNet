@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,22 +11,20 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            //Arrays
-            int[] arr = { 1, 2, 3, 4, 5 };
-            foreach(var item in arr)
+            int[] nums = { 1, 2, 3, 4, 3, 55, 23, 2 };
+            int[] dist = nums.Distinct().ToArray();
+            foreach(var item in dist)
             {
                 Console.WriteLine(item);
             }
             Console.WriteLine();
-            //ArrayList
-            ArrayList arList = new ArrayList();
-            arList.Add(1);
-            arList.Add("Two");
-            arList.Add(false);
-            foreach (var item in arList)
+            string[] animals = { "Cat", "Alligator", "Fox", "Donkey", "Cat" };
+            string[] val = animals.Distinct().ToArray();
+            foreach (var item in val)
             {
                 Console.WriteLine(item);
             }
+
         }
     }
 }
